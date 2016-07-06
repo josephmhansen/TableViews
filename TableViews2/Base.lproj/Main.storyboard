@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Week List View Controller-->
         <scene sceneID="YqF-0C-mDq">
             <objects>
-                <viewController id="Idb-MW-85Z" sceneMemberID="viewController">
+                <viewController id="Idb-MW-85Z" customClass="WeekListViewController" customModule="TableViews2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5en-Sf-9jk"/>
                         <viewControllerLayoutGuide type="bottom" id="Il5-sa-kdb"/>
@@ -43,6 +43,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Idb-MW-85Z" id="DfO-XD-Psu"/>
+                                    <outlet property="delegate" destination="Idb-MW-85Z" id="qiv-kB-9VI"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,15 +62,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dRo-Ee-tAA"/>
+                    <connections>
+                        <outlet property="myTableView" destination="BRQ-jO-ZyC" id="mFR-Nl-M0Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBF-HF-m3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="897" y="448"/>
         </scene>
-        <!--View Controller-->
+        <!--Day Detail View Controller-->
         <scene sceneID="QuL-cS-dIG">
             <objects>
-                <viewController id="zuK-6l-4AD" sceneMemberID="viewController">
+                <viewController id="zuK-6l-4AD" customClass="DayDetailViewController" customModule="TableViews2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kKL-6V-nO7"/>
                         <viewControllerLayoutGuide type="bottom" id="FMD-il-BKN"/>

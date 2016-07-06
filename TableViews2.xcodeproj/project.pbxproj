@@ -11,6 +11,8 @@
 		724F13CF1D2D647A00CE9A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724F13CD1D2D647A00CE9A4C /* Main.storyboard */; };
 		724F13D11D2D647A00CE9A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724F13D01D2D647A00CE9A4C /* Assets.xcassets */; };
 		724F13D41D2D647A00CE9A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724F13D21D2D647A00CE9A4C /* LaunchScreen.storyboard */; };
+		724F13DC1D2D6D5000CE9A4C /* WeekListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F13DB1D2D6D5000CE9A4C /* WeekListViewController.swift */; };
+		724F13DE1D2D6D6C00CE9A4C /* DayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F13DD1D2D6D6C00CE9A4C /* DayDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		724F13D01D2D647A00CE9A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724F13D31D2D647A00CE9A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		724F13D51D2D647A00CE9A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		724F13DB1D2D6D5000CE9A4C /* WeekListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekListViewController.swift; sourceTree = "<group>"; };
+		724F13DD1D2D6D6C00CE9A4C /* DayDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				724F13C91D2D647A00CE9A4C /* AppDelegate.swift */,
 				724F13CD1D2D647A00CE9A4C /* Main.storyboard */,
+				724F13DB1D2D6D5000CE9A4C /* WeekListViewController.swift */,
+				724F13DD1D2D6D6C00CE9A4C /* DayDetailViewController.swift */,
 				724F13D01D2D647A00CE9A4C /* Assets.xcassets */,
 				724F13D21D2D647A00CE9A4C /* LaunchScreen.storyboard */,
 				724F13D51D2D647A00CE9A4C /* Info.plist */,
@@ -133,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724F13DE1D2D6D6C00CE9A4C /* DayDetailViewController.swift in Sources */,
+				724F13DC1D2D6D5000CE9A4C /* WeekListViewController.swift in Sources */,
 				724F13CA1D2D647A00CE9A4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
