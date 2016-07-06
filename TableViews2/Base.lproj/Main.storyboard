@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BRQ-jO-ZyC">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayCell" textLabel="nrd-jr-U4M" style="IBUITableViewCellStyleDefault" id="tkk-cj-u6i">
@@ -57,7 +57,7 @@
                             <constraint firstItem="BRQ-jO-ZyC" firstAttribute="leading" secondItem="FDb-Sc-5gX" secondAttribute="leading" id="ZUH-eB-Vfn"/>
                             <constraint firstAttribute="trailing" secondItem="BRQ-jO-ZyC" secondAttribute="trailing" id="bt9-jf-PvI"/>
                             <constraint firstItem="BRQ-jO-ZyC" firstAttribute="top" secondItem="5en-Sf-9jk" secondAttribute="bottom" id="fSw-sL-Jhe"/>
-                            <constraint firstItem="BRQ-jO-ZyC" firstAttribute="top" secondItem="5en-Sf-9jk" secondAttribute="bottom" id="om1-FY-Mf7"/>
+                            <constraint firstItem="BRQ-jO-ZyC" firstAttribute="top" secondItem="5en-Sf-9jk" secondAttribute="bottom" constant="-64" id="om1-FY-Mf7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BRQ-jO-ZyC" secondAttribute="trailing" id="qCr-We-iBd"/>
                         </constraints>
                     </view>

@@ -29,11 +29,22 @@ class WeekListViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("dayCell", forIndexPath: indexPath)
      
+        
+        let day = weekdays[indexPath.row]
+        cell.textLabel?.text = day
+        
         return cell
+        
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return weekdays.count
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return (self.view.layer.frame.height - 64) / 7
+    }
+    
+    
     
 
     /*
