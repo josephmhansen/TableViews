@@ -44,17 +44,21 @@ class WeekListViewController: UIViewController, UITableViewDelegate, UITableView
         return (self.view.layer.frame.height - 64) / 7
     }
     
-    
-    
-
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        //how are we getting there? DONE
+        // Where are we going? DONE
+        //what am i taking? where is it currently? DONE
+        //did i bring it? did i arrive?
+        if segue.identifier == "toDetailSegue" {
+            let detailVC = segue.destinationViewController as? DayDetailViewController
+            if let indexPath = myTableView.indexPathForSelectedRow {
+                let day = weekdays[indexPath.row]
+                detailVC?.day = day
+            }
+        }
     }
-    */
-
+    
 }
